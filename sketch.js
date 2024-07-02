@@ -42,7 +42,36 @@ async function getStreet(){
     //uncomment to delete old image;
   }
    */
-  let loc = random(["city","desert","jungle","tundra","outer-space"])
+  let loc = random(["a futuristic city",
+    "an ancient monument site in the desert",
+    "a city on an alien world",
+    "a city floating in outer-space",
+    "a hidden underwater metropolis",
+    "a bustling medieval market town",
+    "a serene mountain village",
+    "a high-tech research facility on the moon",
+    "a mystical forest village",
+    "a post-apocalyptic wasteland",
+    "a sprawling subterranean city",
+    "a vibrant island paradise",
+    "a remote Arctic research station",
+    "an abandoned industrial complex",
+    "a utopian society in the clouds",
+    "a vibrant cyberpunk metropolis",
+    "an ancient castle on a cliffside",
+    "a futuristic underwater research station",
+    "a magical academy in the mountains",
+    "a floating island with waterfalls",
+    "a colony on Mars",
+    "a bustling spaceport city",
+    "a secret base in the jungle",
+    "a haunted ghost town",
+    "a grand palace in a desert oasis",
+    "a tranquil lakeside town",
+    "a futuristic vertical city",
+    "a vibrant alien marketplace",
+    "a sprawling nomadic caravan",
+    "a mysterious ancient labyrinth"])
   img = await createImg("https://image.pollinations.ai/prompt/a%20view%20from%20the%20back%20of%20a%20taxi%20in%20a%20futuristic%20"+loc+"%20with%20a%20cool%20person%20in%20the%20backseat?width=800&height=800&nologo=true&seed="+floor(random(1026)),"street scene")
  //img.position(cx,cy)
  img.parent("sketch-holder")
